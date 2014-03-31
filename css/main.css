@@ -1,0 +1,408 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* Table of Content
+==================================================
+    #TYPOGRAPHY SETTING
+    #MODULES [ REPEATED ELEMENTS]
+    #SITES COMMON STYLES
+    #PAGES SPECIFICS STYLES
+    #MEDIAS QUERIES
+
+
+/* #TYPOGRAPHY SETTING
+================================================== */
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a { color: inherit; }
+
+
+/* #MODULES
+================================================== */
+
+
+
+/* #LAYOUT
+================================================== */
+
+
+
+/* #SITE COMMON STYLES
+================================================== */
+
+/**
+*
+* MAIN NAV
+*
+**/
+#main-nav {
+    display: none;
+    float: none;
+    clear: both;
+    position: relative;
+    z-index: 5;
+}
+#main-nav ul {
+    margin: 0;
+    padding: 0;
+}
+#main-nav li {
+   display: block;
+   float: none;
+   margin-bottom: 0;
+   border-top: 1px solid #FFF;
+}
+#main-nav li a {
+    text-decoration: none;
+   display: block;
+   text-transform: uppercase;
+   background: #F4F4F4;
+   padding: 1em;
+   border-bottom: 1px solid #ccc;
+}
+#main-nav li a:hover,
+#main-nav .active a {
+    background: #E9E9E9;
+}
+.menu-button {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    width: 50px;
+    height: 36px;
+    cursor: pointer;
+    text-align: center;
+
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.menu-button:after, .menu-button:before {
+    content: " ";
+    display: block;
+    left: 0;
+    top: 0;
+    height: 7px;
+    background: #959595;
+    width: 100%;
+    position: absolute;
+}
+.menu-button:before {
+    top: auto;
+    bottom: 0;
+}
+.menu-button span {
+    height: 7px;
+    width: 100%;
+    background: #959595;
+    display: inline-block;
+    margin: 14px auto auto;
+}
+
+@media screen and (min-width: 1024px) {
+    #main-nav {
+        display: block !important;
+    }
+
+    #main-nav li {
+        position: relative;
+        display: inline-block;
+        border: none;
+        text-align: center;
+        vertical-align: middle;
+    }
+    
+    #main-nav li a {
+        background: none;
+        border: none;
+        padding: .75em 1em;
+
+        -webkit-transition: all .25s;
+        -moz-transition: all .25s;
+        -ms-transition: all .25s;
+        -o-transition: all .25s;
+        transition: all .25s;
+    }
+    #main-nav li a span{
+        display: block;
+    }
+    #main-nav li a:hover,
+    #main-nav .active a {
+        background: none;
+        color: #00b9e1;
+    }
+    .menu-button {display: none;}
+}
+
+/* #PAGES SPECIFICS STYLES
+================================================== */
+
+
+
+/* #MEDIA QUERIES
+================================================== */
+
+/* BASE STYLE :: MOBILE */
+@media only screen and (min-width: 480px) {
+    
+}
+
+/* MEDIUM STYLE :: TABLET */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* LARGE STYLE  :: DESKTOP */
+@media only screen and (min-width: 960px) {
+    
+}
+
+
+/* VISIBLILITY CLASSES
+================================================== */
+
+/* VISIBLILITY :: LARGE ONLY */
+@media only screen and (max-width: 768px) {
+
+}
+/* VISIBLILITY :: TABLET AND UP */
+@media only screen and (max-width: 767px) {
+
+}
+/* VISIBLILITY  :: DESKTOP ONLY*/
+@media only screen and (min-width: 960px){
+    
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible { visibility: hidden; }
+
+
+/* Use clearfix class on parent to clear nested columns,
+or wrap each row of columns in a <div class="row"> */
+
+.cf:before, .cf:after,
+.container:before, .container:after, 
+.row:before, .row:after                   {content: " "; /* 1 */ display: table; /* 2 */ }
+
+.cf:after, .container:after, .row:after   {clear: both; }
+
+/* #Misc
+================================================== */
+.remove-bottom  { margin-bottom: 0 !important;     }
+.half-bottom    { margin-bottom: 10px !important;  }
+.add-bottom     { margin-bottom: 20px !important;  }
+
+.left           { float: left;   }
+.right          { float: right;  }
+.clear          { clear: both;   }
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
